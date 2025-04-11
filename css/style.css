@@ -1,3 +1,83 @@
-svg{
+svg {
     border: 3px dashed #ccc;
+    transition: all 1s ease;
+    animation: svgee 10s infinite;
+    background-color: #0987c1;
+}
+
+@keyframes svgee {
+    0% {
+        background-color: #0987c1;
+    }
+    50% {
+        background-color: #16477e;
+    }
+    100% {
+        background-color: #2c1373;
+    }
+}
+
+.sun {
+    transition: all 1s ease;
+    animation: sonechko 10s infinite;
+}
+
+@keyframes sonechko {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(80px);
+        opacity: 0;
+    }
+}
+
+.luna {
+    transition: all 1s ease;
+    animation: lunaa 10s infinite;
+}
+
+@keyframes lunaa {
+    0% {
+        transform: translateY(40px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(-40px);
+        opacity: 1;
+    }
+}
+
+
+
+.lis2 {
+    animation: sway2 2.2s ease-in-out infinite alternate;
+    transform-origin: 66px 60px;
+}
+
+.lis1 {
+    animation: sway1 2s ease-in-out infinite alternate;
+    transform-origin: 51px 60px;
+}
+
+.lis3 {
+    animation: sway3 1.8s ease-in-out infinite alternate;
+    transform-origin: 81px 60px;
+}
+
+
+@keyframes sway1 {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(2deg); }
+}
+
+@keyframes sway2 {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(-2deg); }
+}
+
+@keyframes sway3 {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(1.5deg); }
 }
